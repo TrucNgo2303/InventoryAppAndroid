@@ -1,0 +1,68 @@
+<!-- item_asset.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:layout_marginTop="8dp">
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:stretchColumns="1,2,3,4,5"
+        android:layout_marginTop="8dp">
+        <TableRow>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/STT"
+                android:text="1"
+                android:textColor="@color/black"
+                android:layout_width="30dp"
+                android:gravity="center"
+                android:layout_column="1"
+                android:padding="8dp"
+                android:background="@drawable/border"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_assetname"
+                android:text="Tên tài sản"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_width="90dp"
+                android:layout_column="1"
+                android:padding="8dp"
+                android:background="@drawable/border"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_assettype"
+                android:text="Loại"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_column="1"
+                android:layout_width="50dp"
+                android:padding="8dp"
+                android:background="@drawable/border"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_date"
+                android:text="Ngày kiểm kê"
+                android:layout_width="90dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_column="1"
+                android:padding="8dp"
+                android:background="@drawable/border"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_status"
+                android:text="Trạng thái"
+                android:layout_width="80dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_column="1"
+                android:padding="8dp"
+                android:background="@drawable/border"/>
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
